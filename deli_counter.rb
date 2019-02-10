@@ -14,6 +14,7 @@ def take_a_number(line, name)
   case
     when line.length == 0
       puts "Welcome, #{name}. You are number 1 in line."
+      line << name
     when line.length > 0
       line << name
       puts "Welcome, #{name}. You are number #{line.length} in line."
